@@ -1,0 +1,147 @@
+:root {
+    --primary-accent: #0f172a;
+    --text-muted: #64748b;
+    --row-even: #f8fafc;
+    --row-odd: #ffffff;
+    --border-color: #e2e8f0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif; /* google font */
+    color: #1e293b;
+
+    background-image: url('https://getwallpapers.com/wallpaper/full/c/d/6/443822.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--border-color);
+    margin: 25px 0;
+}
+
+.assignment-header {
+    background-color: var(--primary-accent);
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.assignment-header h1 {
+    margin: 0 0 5px 0;
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+}
+
+.assignment-header a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.assignment-header a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: var(--primary-accent);
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    color: var(--primary-accent);
+}
+
+.date {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.subtitle {
+    margin: 0 0 10px 0;
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.job-entry {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+thead tr {
+    background-color: #475569;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 12px 16px;
+    border: 1px solid var(--border-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--row-even);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--row-odd);
+}
+
+.video-link-container {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.video-btn {
+    display: inline-block;
+    background-color: var(--primary-accent);
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.15s ease;
+}
+
+.video-btn:hover {
+    background-color:#334155;
+}
